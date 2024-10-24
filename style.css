@@ -1,0 +1,302 @@
+*{
+    font-family: "Roboto";
+}
+
+
+
+
+/* BODY */
+
+body{
+    background-color: #F6D4BA;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+
+/* HEADER INCLUANT LA NAV EN STICKY */
+
+header{
+    position: sticky;
+    background-color: #FEFADC;
+    top: 0px;
+    padding: 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: ridge #F6D4BA ;
+    opacity: 0.95;
+}
+
+header ul{
+    padding: 0;
+    margin:0;
+}
+
+
+header li{
+    display: inline;
+    padding:5%;
+}
+
+
+
+
+
+/* TITRE DE LA PAGE */
+
+
+.haut{
+    border-bottom: ridge #F6D4BA;
+}
+
+h1{
+    display: inline-block;
+    padding: 45px;
+    margin: 2%;
+    font-size: 1.5rem;
+    border: solid 3px black;
+    border-radius: 56% 44% 55% 45% / 100% 0% 100% 0% ;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+    
+}  
+
+h1:hover {
+    transform: scale(0.95);
+}
+
+ /* ENLEVE LE SOULIGNEMENT DES LIENS QUAND NON VISITE (LINK) + VISITE + QUAND ON CLIQUE (ACTIVE) */
+h1 a:link,
+h1 a:visited,
+h1 a:active {
+text-decoration: none;
+color: black;
+}
+
+
+
+
+
+/* TEXTE DE BIENVENUE SUR LA PAGE (INCLUANT CONTENU + VIDEO */
+
+.bienvenue{
+    background-color: #FEFADC;
+}
+
+.contenuBienvenue{
+    padding: 1%;
+}
+
+.videoBienvenue{
+    padding: 2%;
+}
+
+
+
+
+
+
+
+/* CONTACTS : COORDONNES ET HORAIRES  */
+
+.contact{
+    border-top: ridge #F6D4BA;
+}
+.adresse, .horaires {
+    display: inline-block;
+    width: 35%;
+    box-sizing: border-box;
+    margin: 50px;
+    vertical-align: top;
+    
+  }
+  
+  
+
+
+/* COORDONNES */
+
+.adresse {
+    background-color: #FEFADC;
+    border-radius: 10px 50px 0px 90px;
+    padding: 2%;
+    border: black solid 2px;
+}  
+
+
+
+/* HORAIRES (TABLEAU) */
+
+.horaires{
+    background-color: #FEFADC;
+    border-radius: 10px 50px 0px 90px;
+    border:solid black 2px;
+    padding: 3%;
+}
+
+.horaires th{
+    background-color: #F6D4BA;
+}
+
+.horaires h2{
+    padding-bottom: 25px;
+}
+
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* FORMULAIRE DE CONTACT */
+
+  
+  .formulaire {
+    background-color: #FEFADC ;
+    border-bottom: ridge #F6D4BA;
+    border-top: ridge #F6D4BA;
+    scroll-margin-top: 80px;
+  }
+
+
+/* ENSEMBLE DU FORMULAIRES */
+  .formulaire ul {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    list-style: none;
+  }
+  
+
+  /* LIBELLE + REPONSE */
+  .formulaire li {
+    margin-bottom: 2%;
+  }
+  
+  /* LIBELLE */
+  .formulaire label {
+    font-weight: bold;
+  }
+  
+  /* REPONSES */
+  .reponse {
+    width: 600px;
+    padding: 3%;
+    margin-top: 1.5%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  /* REPONSE DE TEXTE MIS EN AGRANDISSEMENT VERTICAL */
+  .formulaire textarea {
+    resize: vertical;
+  }
+  
+
+  /* BOUTON ENVOYER - FOND ROSE + BORDURES ARRONDIES SANS CONTOUR + CHANGEMENT DE CURSEUR + AGRANDISSEMENT DE LA TAILLE POLICE + GRAS + OMBRE */
+  .bouton {
+    background-color: #F6D4BA;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2%;
+    padding: 6% 15% 6% 15%;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.5);
+  }
+  
+  /* REDUCTION DU BOUTON LORSUQU'ON CLIQUE DESSUS */
+.bouton:active {
+    transform: scale(0.95);
+}
+
+  
+
+
+
+
+
+
+/* SECTION PHOTOS */
+
+
+.textefin {
+    font-size: 1.5rem;
+}
+
+
+.photosfin{
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+.photosfin img{
+    transition: transform 0.3s;
+    margin-right: 40px;
+    width: 25%;
+    height: 150px;
+}
+
+.photosfin img:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+/* FOOTER ACCUEIL ET CONTACT*/
+
+.footer1{
+    display: inline-block;
+    background-color: #FEFADC;
+    width: 100%;
+    font-size:0.8rem;
+    border-top: ridge #F6D4BA;
+}
+
+
+
+/* FOOTER NOTRE GITE ET LE PERIGORD */
+
+.footer2{
+    display: inline-block;
+    background-color: #FEFADC;
+    width: 100%;
+    font-size:0.8rem;
+    border-top: ridge #F6D4BA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+/* PHOTO GITE */
+
+.photogite{
+    margin: 30px;;
+}
